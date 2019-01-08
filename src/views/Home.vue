@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <NewForm/>
+    <div class="logo"><img alt="Vue logo" src="../assets/img/packet.png" width="100" height="100"></div>
+    
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import NewForm from '@/components/NewForm.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    NewForm
   }
 }
 </script>
+<style>
+.logo{
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  background-size: cover;
+}
+</style>
+
